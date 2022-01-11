@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #faffff;
+    font-family:Poppins;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+span {
+    color: #27c0c6;
+}
+
+p {
+    color: #677c99;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.main {
+    background: #0E1B2F;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #15273f;
+    height: 450px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card-img {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius:7%;
+
+    
+}
+.card-img img:nth-child(3){
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    height: 50px;
+    width: 50px;
+    display: none;
+
+}
+
+
+.icon-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color:#677c99 ;
+}
+
+.icons{
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  
+}
+.icons h3{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 300;
+    color:#677c99 ;
+}
+.card-info{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+.card-info h6{
+    font-weight: 300;
+    padding-left: 10px;
+    color:#677c99 ;
+}
+.card-info img{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover h1{
+    color: #35f0f5;
+}
+.card:hover strong{
+    color: #35f0f5;
+}
+
+
+.image-overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 10px;
+    width: 92%;
+    height:92%;
+    background:#35f0f5 ;
+    border-radius: 10px;
+    opacity: 0;
+}
+.image-overlay:hover{
+    opacity: 0.5;
+}
+.card:hover .card-img img:nth-child(3) {
+    display: block;
+
+}
+.card:hover .image-overlay{
+    opacity:0.5;
+}
